@@ -10,10 +10,16 @@ function display_menu(){
     }
 }
 
-
+function site_load(){
+	document.getElementById("recipe_box").style.display = "none";
+	
+}
 
 function load_recipe(recipe_name){
+	document.getElementById("recipe_box").style.display = "block";
+	document.getElementById("website_info").style.display = "none";
 	
+
 	document.getElementById("main_title").innerText = recipes[recipe_name].title;
 	document.getElementById("img_source").src = recipes[recipe_name].imag;
 	document.getElementById("orig_cookbook_details").innerText = recipes[recipe_name].cb_desc;
