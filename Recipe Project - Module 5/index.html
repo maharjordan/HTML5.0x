@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Historic Receipes</title>
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="Styles/style.css">
+        
+		
+    </head>
+
+    <body onload="site_load()">
+        <div id="container">
+            <header>
+                <h1>Historic Recipes of Nova Scotia</h1>
+                <div id="social_media">
+                    Follow Us: <a href="https://www.facebook.com"> <img src="Icons/facebook.svg"> </a> <a href="https://www.twitter.com"> <img src="Icons/twitter.svg"> </a> <a href="https://www.instagram.com"><img src="Icons/instagram.svg"> </a>
+                </div>
+            </header>
+            
+            <div id="search_bar">
+                <input type="search" id="search" placeholder="Search..." />
+            </div>
+
+            <div>
+                <button id="ham_but" onclick="display_menu()"><span class="hamburger"></span></button>
+            </div>
+            
+            <nav id="nav_bar">
+                <ul>
+                    <a id="game_pie" href="#"><li>Game Pie</li></a>
+                    <a id="yeast" href="#"><li>Yeast</li></a>
+                    <a id="beef_steak_pie" href="#"><li>Beef Steak Pie</li></a>
+                </ul>
+            </nav>
+
+            <article id="website_info">
+                <h1>About Historic Recipes of Nova Scotia</h1>
+                <p>
+                    Nova Scotia has a long rich history. 
+                    As a result, numerous recipes were collected and compiled over the years.
+                    Many of these recipes are found in family notes, others in cookbooks.
+                    These recipes will be compiled on this website and reports on their preperation provided.
+                </p>
+            </article>
+
+            <article id="recipe_box">
+                <section class="recipe_title">
+                    <h1 id="main_title"></h1>
+                </section>
+
+                <section class="recipe_picture">
+                    <img id="img_source" src="Images/placeholder.jpg">
+                </section>
+
+                <section class="cookbook_description">
+                    <h1>The Cookbook</h1>
+                    <h2 id="orig_cookbook_title"></h2>
+                    <p id="orig_cookbook_details">
+                        
+                    </p>
+                </section>
+
+                <section class="original_recipe">
+                    <h1>Original Receipe</h1>
+                    <p id="orig_recipe_description">
+                        
+                    </p>
+                </section>
+
+                <section class="ingredient_list">
+                    <h1>Ingredients</h1>
+                    <table id="ingredients_table">
+                        
+                    </table>
+                </section>
+
+                <section class="preperation_description">
+                    <h1>Preperation</h1>
+                    <ol id="prep_steps">
+                        
+                    </ol>
+                </section>
+            </article>
+
+            <footer>
+                <div>
+                    Historic Receipes of Nova Scotia, 2017
+                </div>
+                <div>
+                    <a>Home</a> <a>About</a> <a>Contact Us</a>
+                </div>
+            </footer>
+			<script src="Scripts/recipes.js"></script>
+        <script src="Scripts/script.js"></script>
+        </div>
+    </body>
+</html>
