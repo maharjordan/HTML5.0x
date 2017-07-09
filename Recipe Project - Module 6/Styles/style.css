@@ -1,0 +1,144 @@
+/*
+    Color Scheme
+        Gold       #CDA34F
+        Daisy      #E9E7DA
+        Stem       #636B46
+        Greenery   #373F27
+*/
+
+/* FONTS */
+@font-face{
+	font-family: Playfair;
+	src: url("../Fonts/Playfair.ttf") format("truetype");
+}
+
+@font-face{
+	font-family: Lato;
+	src: url("../Fonts/Lato.ttf") format("truetype");
+}
+
+/* HEADERS */
+h1, h2{
+    font-family: Playfair, serif;
+    text-align: center;
+}
+
+h1{
+    font-size: 1.5em;
+}
+
+h2{
+    font-size: 1.25em;
+}
+
+/* BODY */
+body{
+    margin: 0px;
+}
+
+/* FLEX BOX SETTING */
+.fc{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.fc > * {
+    flex: 1;
+}
+
+/* PRIMARY CONTENT */
+#container.fc{
+    min-height: 75vh;
+}
+
+#container.fc > *{
+    flex-basis: 200px;
+
+    border: 1px solid grey;
+    border-radius: 10px;
+}
+
+#container{
+    background-color: #E9E7Da;
+}
+
+/* HEADERS AND FOOTERS */
+header, footer{
+    background-color: #373F27;
+    color: white;
+    height: 10vh;
+    width: 100vw;
+}
+
+footer.fc{
+    height: 10vh;
+    width: 100vw;
+}
+
+header.fc > h1{
+    margin-top: 0px;
+    font-size: 2em;
+}
+
+header.fc > #social_media{
+    font-size: 1.2em;
+}
+
+#social_media{
+    text-align: right;
+}
+
+#social_media a img{
+    width: 25px;
+}
+
+footer > p{
+    text-align: center;
+}
+
+/* NAVIGATION */
+#nav_bar{
+    background-color: #CDA34F;
+    height: 5vh;
+}
+
+#nav_bar p{
+    flex: 1;
+    height: 100%;
+    border: 1px solid grey;
+
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#nav_bar p:hover{
+    background-color: #373F27;
+}
+
+/* OTHER */
+section{
+    font-family: Lato, sans-serif;
+}
+
+#ingredients_table{
+    margin: auto;
+}
+
+#ingredient_list table th{
+    border-bottom: 1px solid black;
+    text-align: left;
+}
+
+#ingredient_list table tr:nth-child(even){
+    background-color: rgba(99,107,70,0.5);
+}
+
+@media only screen and (max-width: 950px){
+    #social_media{
+        display: none;
+    }
+}
